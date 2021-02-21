@@ -375,7 +375,7 @@ contract SALFPresale is Ownable {
         uint256 currentTime = block.timestamp;
         uint256 passTime = currentTime.sub(presaleStartTime);
         
-        require(passTime <= 3 minutes , 'SALF Presale: presale term ended.');
+        require(passTime <= 3 weeks , 'SALF Presale: presale term ended.');
         
         uint256 purchasedBNB = msg.value;
         uint256 tokenPrice;
